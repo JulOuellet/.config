@@ -3,7 +3,8 @@ require('lualine').setup {
 	icons_enabled = true,
 
 	-- set active colorscheme here
-	theme = 'catppuccin',
+	theme = 'nord',
+	-- theme = 'catppuccin',
 	-- theme = 'gruvbox',
     },
     sections = {
