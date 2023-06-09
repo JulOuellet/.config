@@ -11,5 +11,6 @@ To set an active colorscheme from the ones already installed, uncomment **only**
 
 > #### List of installed colorschemes
 >
-> - Catpuccin - https://github.com/catppuccin/catppuccin
-> - Gruvbox - https://github.com/ellisonleao/gruvbox.nvim
+> - Catpuccin   - https://github.com/catppuccin/catppuccin
+> - Gruvbox     - https://github.com/ellisonleao/gruvbox.nvim
+> - Nord        - https://github.com/shaunsingh/nord.vim
