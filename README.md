@@ -3,7 +3,7 @@ Some config files for my \*nix setup.
 
 
 ## Nvim
-In the nvim folder are the config files for my current Neovim configuration. It is highly modular and built from scratch using exlusively the lightweigbt Lua scripting language.
+In the nvim folder are the config files for my current Neovim configuration. It is highly modular and built from scratch using exlusively the Lua scripting language.
 
 
 ### Change colorscheme
