@@ -2,10 +2,10 @@ require('lualine').setup {
     options = {
 	icons_enabled = true,
 
-	-- set active colorscheme here
-	theme = 'nord',
+	-- set active colorscheme here --
+	-- theme = 'nord',
 	-- theme = 'catppuccin',
-	-- theme = 'gruvbox',
+	theme = 'gruvbox',
     },
     sections = {
 	lualine_a = {

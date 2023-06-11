@@ -5,5 +5,5 @@ require("core.plugin_config.telescope")
 
 -- colorschemes
 require("core.plugin_config.colorschemes.gruvbox")
-require("core.plugin_config.colorschemes.catppuccin")
-require("core.plugin_config.colorschemes.nord")
+-- require("core.plugin_config.colorschemes.catppuccin")
+-- require("core.plugin_config.colorschemes.nord")
