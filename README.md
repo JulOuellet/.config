@@ -22,3 +22,6 @@ TODO: Add keybinds
 
 ## Alacritty
 TODO: Add readme
+
+## I3WM
+TODO: Add readme
