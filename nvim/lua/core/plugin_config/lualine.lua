@@ -4,8 +4,8 @@ require('lualine').setup {
 
 	-- set active colorscheme here --
 	-- theme = 'nord',
-	-- theme = 'catppuccin',
-	theme = 'gruvbox',
+	theme = 'catppuccin',
+	-- theme = 'gruvbox',
     },
     sections = {
 	lualine_a = {
