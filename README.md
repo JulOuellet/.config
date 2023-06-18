@@ -1,5 +1,5 @@
 # .config
-Some config files for my \*nix setup.
+Some config files for my current \*nix setup on Endeavouros.
 
 
 ## Nvim
@@ -19,3 +19,6 @@ Change the colorscheme already installed:
 
 TODO: Add lsp  
 TODO: Add keybinds
+
+## Alacritty
+TODO: Add readme
