@@ -19,3 +19,6 @@ Change the colorscheme already installed:
 
 TODO: Add lsp  
 TODO: Add keybinds
+
+## Alacritty
+TODO: Add readme
