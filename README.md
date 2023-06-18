@@ -1,5 +1,5 @@
 # .config
-Some config files for my \*nix setup.
+Some config files for my current \*nix setup on Endeavouros.
 
 
 ## Nvim
