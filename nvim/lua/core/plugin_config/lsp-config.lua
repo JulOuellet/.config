@@ -17,15 +17,20 @@ local on_attach = function(_, _)
     vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
 end
 
+local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
 require("lspconfig").lua_ls.setup {
-    on_attach
+    on_attach,
+    capabilities = capabilities
 }
 
 require("lspconfig").rust_analyzer.setup({
     on_attach = on_attach,
     filetypes = {"rust"},
+    capabilities = capabilities
 })
 
 require("lspconfig").sqlls.setup({
-    on_attach
+    on_attach,
+    capabilities = capabilities
 })
