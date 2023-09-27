@@ -22,3 +22,13 @@ cmp.setup({
 	{ name = 'buffer' }
     })
 })
+
+-- set configuration for cmdline completion with ':'
+cmp.setup.cmdline(':', {
+    mapping = cmp.mapping.preset.cmdline(),
+    sources = cmp.config.sources({
+	{ name = 'path' }
+    }, {
+	{ name = 'cmdline' }
+    })
+})
