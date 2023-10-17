@@ -3,7 +3,8 @@ require("mason-lspconfig").setup({
     ensure_installed = {
 	"lua_ls",
 	"rust_analyzer",
-	"sqlls"
+	"sqlls",
+	"pylsp"
     }
 })
 
@@ -32,5 +33,10 @@ require("lspconfig").rust_analyzer.setup({
 
 require("lspconfig").sqlls.setup({
     on_attach,
+    capabilities = capabilities
+})
+
+require("lspconfig").pylsp.setup({
+    on_attach = on_attach,
     capabilities = capabilities
 })
