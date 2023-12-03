@@ -4,7 +4,8 @@ require("mason-lspconfig").setup({
 	"lua_ls",
 	"rust_analyzer",
 	"sqlls",
-	"pylsp"
+	"pylsp",
+	"gopls"
     }
 })
 
@@ -39,4 +40,9 @@ require("lspconfig").sqlls.setup({
 require("lspconfig").pylsp.setup({
     on_attach = on_attach,
     capabilities = capabilities
+})
+
+require("lspconfig").gopls.setup({
+	on_attach = on_attach,
+	capabilities = capabilities
 })
