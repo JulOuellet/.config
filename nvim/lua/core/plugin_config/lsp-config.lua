@@ -5,7 +5,8 @@ require("mason-lspconfig").setup({
 	"rust_analyzer",
 	"sqlls",
 	"pylsp",
-	"gopls"
+	"gopls",
+	"jdtls"
     }
 })
 
