@@ -1,8 +1,6 @@
 local dap = require('dap')
 local dapui = require('dapui')
 
--- Java DAP will be configured by nvim-jdtls
-
 -- Configure DAP UI
 dapui.setup({
   icons = { expanded = "▾", collapsed = "▸" },
