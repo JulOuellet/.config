@@ -1,9 +1,10 @@
 local opt = vim.opt
 
-opt.number = true      -- Show line numbers
-opt.showcmd = true   -- Show command in bottom bar
-opt.autowrite = true -- Automatically write before running commands
-opt.autoread = true  -- Automatically read when file is changed from outside
+-- General
+opt.number = true
+opt.showcmd = true
+opt.autowrite = true
+opt.autoread = true
 
 -- Indentation
 opt.shiftwidth = 4
