@@ -24,7 +24,7 @@ return require('packer').startup(function(use)
 	tag = '0.1.8',
 	requires = { {'nvim-lua/plenary.nvim'} }
     }
-    use {
+    use { -- LSP config
 	'williamboman/mason.nvim',
 	'williamboman/mason-lspconfig.nvim',
 	'neovim/nvim-lspconfig',
@@ -37,11 +37,13 @@ return require('packer').startup(function(use)
     use 'saadparwaiz1/cmp_luasnip'
     use 'rafamadriz/friendly-snippets'
     use 'github/copilot.vim'
+    use 'lewis6991/gitsigns.nvim'
 
-    -- My colorschemes
-    use 'ellisonleao/gruvbox.nvim'
-    use 'catppuccin/nvim'
-    use 'shaunsingh/nord.nvim'
+    use { -- My colorschemes
+	'ellisonleao/gruvbox.nvim',
+	'catppuccin/nvim',
+	'shaunsingh/nord.nvim',
+    }
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
