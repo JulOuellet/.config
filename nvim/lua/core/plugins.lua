@@ -39,6 +39,14 @@ return require('packer').startup(function(use)
     use 'github/copilot.vim'
     use 'lewis6991/gitsigns.nvim'
 
+    -- Debugging
+    use 'mfussenegger/nvim-dap'
+    use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+    use 'theHamsta/nvim-dap-virtual-text'
+
+    -- Java
+    use 'mfussenegger/nvim-jdtls'
+
     use { -- My colorschemes
 	'ellisonleao/gruvbox.nvim',
 	'catppuccin/nvim',
@@ -51,3 +59,4 @@ return require('packer').startup(function(use)
 	require('packer').sync()
     end
 end)
+

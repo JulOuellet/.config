@@ -10,6 +10,15 @@ require("mason-lspconfig").setup({
     }
 })
 
+-- Ensure Java debugging tools are installed
+local mason_registry = require("mason-registry")
+for _, pkg_name in ipairs({"java-debug-adapter", "java-test"}) do
+    local pkg = mason_registry.get_package(pkg_name)
+    if not pkg:is_installed() then
+	pkg:install()
+    end
+end
+
 local on_attach = function(_, _)
     vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, {})
     vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, {})
@@ -51,11 +60,12 @@ require("lspconfig").pylsp.setup({
 })
 
 require("lspconfig").gopls.setup({
-	on_attach = on_attach,
-	capabilities = capabilities
+    on_attach = on_attach,
+    capabilities = capabilities
 })
 
 require("lspconfig").jdtls.setup({
-	on_attach = on_attach,
-	capabilities = capabilities
+    on_attach = on_attach,
+    capabilities = capabilities
 })
+
