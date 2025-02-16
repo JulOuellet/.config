@@ -3,8 +3,8 @@ vim.g.loaded_netrwPlugin = 1
 
 require("nvim-tree").setup {
     git = {
-	enable = true,
-	ignore = false, -- set to false to see files included in gitignore in tree
+	    enable = true,
+	    ignore = false, -- set to false to see files included in gitignore in tree
     },
 }
 
