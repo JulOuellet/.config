@@ -3,9 +3,16 @@ vim.g.loaded_netrwPlugin = 1
 
 require("nvim-tree").setup {
     git = {
-	    enable = true,
-	    ignore = false, -- set to false to see files included in gitignore in tree
+	    enable = true
     },
+    filters = {
+        git_ignored = true,
+        exclude = { -- Show these files in the tree, even if they are included in the gitignore
+            ".env",
+            ".env.*",
+            "target"
+        }
+    }
 }
 
 vim.keymap.set('n', '<c-n>', ':NvimTreeFindFileToggle<CR>')
